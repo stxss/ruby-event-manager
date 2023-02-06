@@ -1,0 +1,49 @@
+require: standard
+
+inherit_gem:
+  standard: config/base.yml
+
+AllCops:
+  SuggestExtensions: false
+  TargetRubyVersion: 3.1
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/*'
+    - 'spec/*/*'
+
+Layout/LineLength:
+  Exclude:
+    - 'spec/*'
+    - 'spec/*/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 1500
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+
+Style/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+
